@@ -1,6 +1,7 @@
 package cz.muni.fi.pa165.w2018.dndtroops.dao;
 
 import cz.muni.fi.pa165.w2018.dndtroops.entity.Role;
+import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -8,6 +9,12 @@ import java.util.List;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
+/**
+ * Implementation of RoleDao
+ *
+ * @author Daniel Fecko 445539
+ */
+@Repository
 public class RoleDaoImpl implements RoleDao {
 
 	@PersistenceContext
